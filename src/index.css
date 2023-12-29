@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    font-family: 'Fira Code', monospace;
+    scrollbar-width: none;
+}
+
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+.general-btn{
+    @apply border px-3 py-1 mx-3 border-deg1-dark dark:bg-deg1-dark dark:text-deg2 dark:border-deg2  
+}
+
+.dark-head{
+    @apply dark:text-deg1
+}
+
+.dark-text{
+    @apply dark:text-deg2
+}
+
+.light-head{
+    @apply text-deg1-dark
+}
+
+.light-text{
+    @apply text-deg2-dark
+}
+
+.content {
+    @apply border-l border-l-[#999] 
+}
+
