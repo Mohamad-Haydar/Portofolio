@@ -1,13 +1,13 @@
 import { Link, useNavigate } from "react-router-dom"
 import { useList } from "../Context/CustomLiContext"
 import { MouseEvent } from "react";
-import { useSelectTheme } from "../Context/ThemeContextProvider";
+// import { useSelectTheme } from "../Context/ThemeContextProvider";
 
 function CustomLi({title, selected}:{title:string,selected:boolean}) {
 
   const {addLi, removeLi} = useList()
   const navigate = useNavigate()
-  const {theme} = useSelectTheme()
+  // const {theme} = useSelectTheme()
 
   const handleRemove = (e: MouseEvent, title:string) => {
     e.stopPropagation();

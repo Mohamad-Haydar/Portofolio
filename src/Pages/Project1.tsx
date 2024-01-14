@@ -3,7 +3,7 @@ import Numbers from '../Components/Numbers'
 function Project1() {
   return (
     <div className=' py-10 flex relative '>
-          <Numbers home={false}/>
+          <Numbers /*home={false}*//>
       
           <div className=' lg:ms-10 ms-1  '>
             <h2 className=' text-4xl '>Compatibility Verification of Photovoltaic Models and Inverters Based On Natural Language Processing</h2>

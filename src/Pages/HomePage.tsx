@@ -5,7 +5,7 @@ import Numbers from "../Components/Numbers";
 function HomePage() {
   const numbers = useRef<HTMLDivElement>(null)
   const fragment = document.createDocumentFragment();
-  const father = useRef<HTMLDivElement>(null);
+  // const father = useRef<HTMLDivElement>(null);
   
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function HomePage() {
       {/* numbers */}
       {/* <div ref={numbers} className="ps-2">
       </div> */}
-      <Numbers home={true}/>
+      <Numbers /*home={true}*//>
       
       <div className="content flex py-10 px-6 relative z-10  xs-pad">
 

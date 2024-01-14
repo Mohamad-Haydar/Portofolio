@@ -1,9 +1,6 @@
-import { useSwitchMode } from '../Context/DarkModeContextProvider';
-import NavBar from './NavBar'
+// import { useSwitchMode } from '../Context/DarkModeContextProvider';
 
 function Upper() {
-
-    const { mode } = useSwitchMode();
 
   return (
       <div className=' bg-deg3-dark w-full py-1'>

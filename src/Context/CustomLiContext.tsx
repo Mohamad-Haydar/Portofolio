@@ -13,8 +13,8 @@ type CustomLi = {
 
 export const LiContext = createContext<CustomLi>({
     list: [{title: "Home.html", selected: true}], 
-    addLi: (title:string, selected: boolean) => {},
-    removeLi: function (title: string): string {
+    addLi: (_title:string, _selected: boolean) => {},
+    removeLi: function (_title: string): string {
         return '/'
     }
 });
@@ -30,9 +30,8 @@ export function CustomLiProvider({ children }:  {children:ReactNode}) {
   }, [])
 
     const [list, setList] = useState<listContent[]>([{title: "Home.html", selected: true}]);
-    const updatedList = list.map(item => ({ ...item, selected: false }));
 
-  const addLi = (title:string, selected: boolean) => {
+  const addLi = (title:string) => {
     const titleExists = list.some(item => item.title === title);
     if (titleExists) {
         const updatedList = list.map(item =>

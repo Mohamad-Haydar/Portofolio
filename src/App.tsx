@@ -1,5 +1,5 @@
 import './App.css'
-import { useSelectTheme } from './Context/ThemeContextProvider';
+// import { useSelectTheme } from './Context/ThemeContextProvider';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import {
   createBrowserRouter,
@@ -15,11 +15,11 @@ import AboutPage from './Pages/AboutPage';
 import SideBar from './Components/SideBar';
 import Upper from './Components/Upper';
 import NavBar from './Components/NavBar';
-import Projects from './Pages/Projects';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Project1 from './Pages/Project1';
 import Project2 from './Pages/Project2';
 import Project3 from './Pages/Project3';
+import TutorialComponent from './Components/TutorialComponent';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,23 +35,40 @@ export const router = createBrowserRouter(
 )
 
 function App() {
-  const {SelectColorTheme} = useSelectTheme();
+  // const {SelectColorTheme} = useSelectTheme();
   const [collapsed, setCollapsed] = useState(true)
+  const [showMessage, setShowMessage] = useState<boolean>(false);
+  useEffect(() => {
+    // Check if the user has already seen the message
+    const hasSeenMessage = localStorage.getItem('hasSeenMessage');
+    // localStorage.setItem('hasSeenMessage', 'false')
 
-  const handleClick = (e: any) => {
-    const dataValue = e.target.dataset.themeColor;
-    SelectColorTheme(dataValue)
-  }
+    if (hasSeenMessage != "true") {
+      // If not seen, set the flag in local storage and show the message
+      localStorage.setItem('hasSeenMessage', 'true');
+      setShowMessage(true);
+    }
+  }, []);
+
+  // const handleClick = (e: any) => {
+  //   const dataValue = e.target.dataset.themeColor;
+  //   SelectColorTheme(dataValue)
+  // }
 
   const { mode } = useSwitchMode();
+
+  const handleClose = () => {
+    setShowMessage(false);
+  };
   
   return (
       <div className={`${mode} `}>
+        { showMessage && <TutorialComponent handleClose={handleClose}/>}
         <Upper />
         <div className='flex relative main bg-deg1 dark:bg-deg1-dark text-deg1-dark dark:text-deg1'>
           <SideBar state={{ collapsed, setCollapsed }}/>
           <div className='flex-1 '>
-            <NavBar state={{ collapsed, setCollapsed }}/>
+            <NavBar state={{ collapsed, setCollapsed }} showMessage={showMessage}/>
             <div className=' relative window overflow-y-auto overflow-x-hidden'>
               <div className='container mx-auto'>
                 <Outlet/>

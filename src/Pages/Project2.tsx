@@ -1,10 +1,9 @@
-import React from 'react'
 import Numbers from '../Components/Numbers'
 
 function Project2() {
   return (
     <div className=' py-10 flex relative '>
-    <Numbers home={false}/>
+    <Numbers /*home={false}*//>
 
     <div className=' lg:ms-10 ms-1  '>
       <h2 className=' text-4xl '>Online Book Store</h2>

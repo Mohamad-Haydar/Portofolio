@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-function Numbers({home} : {home: boolean}) {
+function Numbers(/*{home} : {home: boolean}*/) {
 
     const numbers = useRef<HTMLDivElement>(null)
     const fragment = document.createDocumentFragment();

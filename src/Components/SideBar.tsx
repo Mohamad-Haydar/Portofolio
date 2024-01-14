@@ -1,5 +1,5 @@
 import {  ReactNode, useEffect, useState } from "react";
-import { Sidebar,  Menu, MenuItem, SubMenu  } from "react-pro-sidebar";
+import { Sidebar,  Menu, MenuItem, CSSObject  } from "react-pro-sidebar";
 import Html from '../assets/html5.svg'
 import Python from '../assets/python.png'
 import CSharp from '../assets/csharp.png'
@@ -67,18 +67,18 @@ function SideBar({state}:SideBarProps) {
       <h2 className="h-[34px] text-deg1 text-center leading-[34px] mb-5 shadow-lg text-sm flex items-center justify-between md:justify-center">
       <span className="md:hidden"></span>Explorer
           <span className="bg-deg2-dark px-2 md:hidden">
-            {state.collapsed && <i className="bi bi-box-arrow-in-right  " onClick={handleClick}></i>}
-            {!state.collapsed && <i className="bi bi-box-arrow-in-left" onClick={handleClick}></i>}
+            {state.collapsed && <i className="bi bi-box-arrow-in-right text-xl leading-none " onClick={handleClick}></i>}
+            {!state.collapsed && <i className="bi /bi-box-arrow-in-left bi-x-lg text-xl leading-none " onClick={handleClick}></i>}
           </span>
       </h2>
       
       <Menu className=" text-deg1 text-xs"
             menuItemStyles={{
-              button: ({active}) => {
+              button: ({active}) :CSSObject | undefined  => {
                   return {
                       ...btnHover,
-                      backgroundColor: active && btnHover["&:hover"].backgroundColor,
-                      color: active && btnHover["&:hover"].color,
+                      backgroundColor: active ? btnHover["&:hover"].backgroundColor : undefined,
+                      color: active ?  btnHover["&:hover"].color : undefined,
                       // 'border-left': active && btnHover["&:hover"]["border-left"]
                   }
               },

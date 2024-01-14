@@ -3,7 +3,7 @@ import Numbers from '../Components/Numbers'
 function Project3() {
   return (
     <div className=' py-10 flex relative '>
-          <Numbers home={false}/>
+          <Numbers /*home={false}*//>
       
           <div className=' lg:ms-10 ms-1  '>
             <h2 className=' text-4xl '>Electronics E-Commerce Platform</h2>

@@ -10,12 +10,20 @@ interface SideBarProps {
   };
 }
 
+interface NavBarProps {
+  state: {
+    collapsed: boolean;
+    setCollapsed: React.Dispatch<React.SetStateAction<boolean>>;
+  };
+  showMessage: boolean;
+}
+
 type CustomLi = {
   title: string;
   selected: boolean;
 };
 
-function NavBar({state}:SideBarProps) {
+const NavBar: React.FC<NavBarProps> = ({ state, showMessage }) => {
 
     const { mode,switchColorMode } = useSwitchMode();
     const {list} = useList()
@@ -39,8 +47,8 @@ function NavBar({state}:SideBarProps) {
     <div className='navBar bg-deg2-dark w-full text-deg1  drop-shadow-lg'> 
       <div className='flex w-full '>
         <span className="text-center border-b-white border-b-[1px] border-opacity-[.5] bg-deg1-dark px-2 text-deg1 flex items-center justify-center border-e-white border-e-[1px]">
-          {state.collapsed && <i className="bi bi-box-arrow-in-right " onClick={handleClick}></i>}
-          {!state.collapsed && <i className="bi bi-box-arrow-in-left " onClick={handleClick}></i>}
+          {state.collapsed && <i className="bi-list text-xl leading-none " onClick={handleClick}></i>}
+          {!state.collapsed && <i className="bi /bi-box-arrow-in-left  bi-x-lg text-xl leading-none " onClick={handleClick}></i>}
         </span>
         <ul className=' flex hideScroll flex-1' style={{ maxWidth: 'calc(100vw - 62px)', overflowX: 'auto', whiteSpace: 'nowrap'}} ref={hScroll}>
           {/* <CustomLi title={'Home'} selected={true}/>

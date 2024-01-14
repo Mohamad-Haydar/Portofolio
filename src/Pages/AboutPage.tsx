@@ -1,18 +1,18 @@
 import Numbers from '../Components/Numbers';
-import { useSelectTheme } from '../Context/ThemeContextProvider';
+// import { useSelectTheme } from '../Context/ThemeContextProvider';
 
 function AboutPage() {
 
-    const {SelectColorTheme} = useSelectTheme();
+    // const {SelectColorTheme} = useSelectTheme();
 
-  const handleClick = (e: any) => {
-    const dataValue = e.target.dataset.themeColor;
-    SelectColorTheme(dataValue)
-  }
+  // const handleClick = (e: any) => {
+  //   const dataValue = e.target.dataset.themeColor;
+  //   SelectColorTheme(dataValue)
+  // }
 
   return (
     <div className=' py-10 flex relative '>
-          <Numbers home={false}/>
+          <Numbers /*home={false}*//>
           
           <div className=' lg:ms-10 ms-1  '>
             <h2 className=' text-4xl '>About me</h2>
