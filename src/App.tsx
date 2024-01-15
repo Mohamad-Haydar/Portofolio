@@ -1,5 +1,4 @@
 import './App.css'
-// import { useSelectTheme } from './Context/ThemeContextProvider';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import {
   createBrowserRouter,
@@ -49,11 +48,6 @@ function App() {
       setShowMessage(true);
     }
   }, []);
-
-  // const handleClick = (e: any) => {
-  //   const dataValue = e.target.dataset.themeColor;
-  //   SelectColorTheme(dataValue)
-  // }
 
   const { mode } = useSwitchMode();
 

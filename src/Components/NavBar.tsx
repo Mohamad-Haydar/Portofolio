@@ -1,14 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useSwitchMode } from '../Context/DarkModeContextProvider';
 import CustomLi from './CustomLi';
 import { useList } from '../Context/CustomLiContext';
-
-interface SideBarProps {
-  state: {
-    collapsed: boolean;
-    setCollapsed: React.Dispatch<React.SetStateAction<boolean>>;
-  };
-}
 
 interface NavBarProps {
   state: {
@@ -23,7 +16,7 @@ type CustomLi = {
   selected: boolean;
 };
 
-const NavBar: React.FC<NavBarProps> = ({ state, showMessage }) => {
+const NavBar: React.FC<NavBarProps> = ({ state }) => {
 
     const { mode,switchColorMode } = useSwitchMode();
     const {list} = useList()

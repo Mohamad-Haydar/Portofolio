@@ -3,13 +3,6 @@ import Numbers from '../Components/Numbers';
 
 function AboutPage() {
 
-    // const {SelectColorTheme} = useSelectTheme();
-
-  // const handleClick = (e: any) => {
-  //   const dataValue = e.target.dataset.themeColor;
-  //   SelectColorTheme(dataValue)
-  // }
-
   return (
     <div className=' py-10 flex relative '>
           <Numbers /*home={false}*//>

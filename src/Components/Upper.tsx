@@ -1,5 +1,3 @@
-// import { useSwitchMode } from '../Context/DarkModeContextProvider';
-
 function Upper() {
 
   return (
