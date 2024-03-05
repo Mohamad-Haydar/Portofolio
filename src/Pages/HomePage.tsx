@@ -32,10 +32,10 @@ function HomePage() {
       </div> */}
       <Numbers /*home={true}*//>
       
-      <div className="content flex py-10 px-6 relative z-10  xs-pad">
+      <div className="content flex py-10 px-3 md:px-6 relative z-10  xs-pad">
 
         {/* left part */}
-        <div className="flex gap-6 items-center xs-gap ">
+        <div className="flex gap-3 md:gap-6 items-center xs-gap ">
           <div className="h-[100%] w-[1px] bg-gray  "/>
           <div className="h-[85%] w-[1px] bg-gray  "/>
           <div className="h-[55%] w-[1px] bg-gray  "/>

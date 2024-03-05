@@ -1,20 +1,20 @@
 import Numbers from '../Components/Numbers'
 
-function Project3() {
+function Project2() {
   return (
     <div className=' py-10 flex relative '>
           <Numbers /*home={false}*//>
       
           <div className=' lg:ms-10 ms-1  '>
-            <h2 className=' text-4xl '>Electronics E-Commerce Platform</h2>
+            <h2 className=' text-2xl md:text-5xl '>Electronics E-Commerce Platform</h2>
             <ul className='dark:text-deg3 text-deg3-dark text-xs'>
               <li>Aug 2023 - Nov 2023 </li>
             </ul>
             <br />
-            <div className='border-s-[1px] border-s-gray border-opacity-[0.5] px-5 max-w-5xl text-deg3-dark dark:text-deg3'>
+            <div className='border-s-[1px] border-s-gray border-opacity-[0.5] px-3 md:px-5 max-w-5xl text-deg3-dark dark:text-deg3'>
 
-              <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Description</h3>
-              <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
+              <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-lg md:text-xl'>Description</h3>
+              <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-3 md:ps-5'>
                 <p className='text-sm'>
                 Collaborating with a front-end developer, I contributed to the development of a comprehensive electronics e-commerce website. The project encompasses both a user-friendly client-facing website and a robust admin dashboard for efficient data control. My role as a back-end developer involved crafting a powerful API using the .NET framework and integrating it with an MSSQL database.                
                 </p>
@@ -22,8 +22,8 @@ function Project3() {
 
               <br />
 
-              <h3 className='mb-1  w-fit text-deg1 font-semibold text-xl'>Demo</h3>
-            <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
+              <h3 className='mb-1  w-fit text-deg1 font-semibold text-lg md:text-xl'>Demo</h3>
+            <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-3 md:ps-5'>
                 <div className='text-sm mb-5'>
                   The documentation of project is accessible online at:   
                   <a href='https://electronixapi.somee.com/swagger/' className='text-blue underline'>https://electronixapi.somee.com/swagger/</a>
@@ -46,10 +46,10 @@ function Project3() {
                 
             </div>
 
-              <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Key Features</h3>
-              <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
-                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Role-Based Authentication</h4>
-                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+              <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-lg md:text-xl'>Key Features</h3>
+              <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-3 md:ps-5'>
+                <h4 className='text-lg md:text-xl dark:text-deg1 text-deg3-dark'>Role-Based Authentication</h4>
+                <p className='text-sm ps-3 md:ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
                     Implemented role-based authentication allowing users to explore the website without login for general browsing.
                     <br />
                     Secure areas, such as the shopping cart and checkout process, require user authentication via JSON Web Tokens (JWT).
@@ -65,8 +65,8 @@ function Project3() {
 
                 <br />
 
-                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>API Development</h4>
-                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                <h4 className='text-lg md:text-xl dark:text-deg1 text-deg3-dark'>API Development</h4>
+                <p className='text-sm ps-3 md:ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
                 Constructed a robust API using the .NET framework, providing seamless communication between the front-end and database.
                 <br />
                 Implemented endpoints for public access, user authentication, product interactions, and admin functionalities.
@@ -74,8 +74,8 @@ function Project3() {
 
                 <br />
 
-                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Secure Authentication and Forgot Password</h4>
-                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                <h4 className='text-lg md:text-xl dark:text-deg1 text-deg3-dark'>Secure Authentication and Forgot Password</h4>
+                <p className='text-sm ps-3 md:ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
                 Utilized JSON Web Tokens for secure user authentication, ensuring data integrity and confidentiality.
                 <br />
                 Implemented a password recovery system through a dedicated API endpoint.
@@ -83,8 +83,8 @@ function Project3() {
 
                 <br />
 
-                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Payment Integration</h4>
-                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                <h4 className='text-lg md:text-xl dark:text-deg1 text-deg3-dark'>Payment Integration</h4>
+                <p className='text-sm ps-3 md:ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
                 Integrated the Stripe API for a secure and streamlined checkout process.
                 <br />
                 Implemented payment functionalities, allowing users to seamlessly complete purchases.
@@ -92,8 +92,8 @@ function Project3() {
 
                 <br />
 
-                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Product Variation and Real-World Relations</h4>
-                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                <h4 className='text-lg md:text-xl dark:text-deg1 text-deg3-dark'>Product Variation and Real-World Relations</h4>
+                <p className='text-sm ps-3 md:ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
                 Modeled product relationships based on real-world scenarios, incorporating variations, quantities, and prices for each product
                 <br />
                 Considered the availability of each product variation, providing a dynamic shopping experience
@@ -101,8 +101,8 @@ function Project3() {
 
                 <br />
 
-                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Rating System</h4>
-                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                <h4 className='text-lg md:text-xl dark:text-deg1 text-deg3-dark'>Rating System</h4>
+                <p className='text-sm ps-3 md:ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
                 Incorporated a user-friendly rating system, enabling customers to express their opinions and provide feedback on products
                 </p>
 
@@ -113,4 +113,4 @@ function Project3() {
   )
 }
 
-export default Project3
+export default Project2

@@ -36,7 +36,7 @@ const NavBar: React.FC<NavBarProps> = ({ state }) => {
     }
 
   return (
-    <nav className={`${mode} w-full`}>
+    <nav className={`${mode} w-full`} style={{maxWidth: "100vw"}}>
     <div className='navBar bg-deg2-dark w-full text-deg1  drop-shadow-lg'> 
       <div className='flex w-full '>
         <span className="text-center border-b-white border-b-[1px] border-opacity-[.5] bg-deg1-dark px-2 text-deg1 flex items-center justify-center border-e-white border-e-[1px]">

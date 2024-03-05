@@ -1,6 +1,6 @@
 import Numbers from '../Components/Numbers'
 
-function Project2() {
+function Project3() {
   return (
     <div className=' py-10 flex relative '>
     <Numbers /*home={false}*//>
@@ -90,4 +90,4 @@ function Project2() {
   )
 }
 
-export default Project2
+export default Project3

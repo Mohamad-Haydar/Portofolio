@@ -24,7 +24,11 @@
 .arrow-container::before {
 content: '\203A';
 }
-
+@media (max-width: 768px) {
+    .number{
+        padding-right: 0px !important;
+    }
+}
 .number{
     font-size: 14px;
     line-height: 24px;
