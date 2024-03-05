@@ -26,6 +26,16 @@ function Project1() {
 
               <br />
 
+              <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Demo</h3>
+              <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
+              Gihub Link: <a href='https://github.com/Mohamad-Haydar/FYP.git' className='text-blue underline'>https://github.com/Mohamad-Haydar/FYP.git</a>
+                <p className='text-sm'>
+                If you're interested in exploring the project, you can easily access the code and instructions for running the application on the dedicated GitHub repository. Simply follow the provided link and refer to the README instructions for a smooth download and setup process.
+                </p>
+              </div>
+
+              <br />
+
               <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Importance of Compliance Checks</h3>
               <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
               <p className='text-sm'>
@@ -52,14 +62,6 @@ function Project1() {
               </div>
 
               <br />
-
-              <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Demo</h3>
-              <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
-                <p className='text-sm'>
-                This portfolio project has been designed as a standalone application to optimize its functionality when run locally. Given the specificity of its focus, we've opted for an application-based deployment to ensure a seamless and efficient user experience. If you're interested in exploring the project, you can easily access the code and instructions for running the application on the dedicated GitHub repository. Simply follow the provided link and refer to the README instructions for a smooth download and setup process. This approach allows users to interact with the application at their convenience, making it easily accessible and tailored to individual preferences. Visit the GitHub repository at https://github.com/Mohamad-Haydar/FYP.git to experience the project firsthand.
-                </p>
-</div>
-
 
             </div>
       </div>

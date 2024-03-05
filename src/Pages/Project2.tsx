@@ -1,93 +1,116 @@
 import Numbers from '../Components/Numbers'
 
-function Project2() {
+function Project3() {
   return (
     <div className=' py-10 flex relative '>
-    <Numbers /*home={false}*//>
+          <Numbers /*home={false}*//>
+      
+          <div className=' lg:ms-10 ms-1  '>
+            <h2 className=' text-4xl '>Electronics E-Commerce Platform</h2>
+            <ul className='dark:text-deg3 text-deg3-dark text-xs'>
+              <li>Aug 2023 - Nov 2023 </li>
+            </ul>
+            <br />
+            <div className='border-s-[1px] border-s-gray border-opacity-[0.5] px-5 max-w-5xl text-deg3-dark dark:text-deg3'>
 
-    <div className=' lg:ms-10 ms-1  '>
-      <h2 className=' text-4xl '>Online Book Store</h2>
-      <ul className='dark:text-deg3 text-deg3-dark text-xs'>
-        <li>Aug 2023 - Sep 2023 </li>
-      </ul>
-      <br />
-      <div className='border-s-[1px] border-s-gray border-opacity-[0.5] px-5 max-w-5xl text-deg3-dark dark:text-deg3'>
+              <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Description</h3>
+              <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
+                <p className='text-sm'>
+                Collaborating with a front-end developer, I contributed to the development of a comprehensive electronics e-commerce website. The project encompasses both a user-friendly client-facing website and a robust admin dashboard for efficient data control. My role as a back-end developer involved crafting a powerful API using the .NET framework and integrating it with an MSSQL database.                
+                </p>
+              </div>
 
-        <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Description</h3>
-        <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
-          <p className='text-sm'>
-          I developed an MVC (Model-View-Controller) application focused on managing an online book store. The project employs a robust architecture utilizing the repository pattern with a unit of work, ensuring efficient data management. The application features a user-friendly interface allowing visitors to browse the book catalog. To enhance user interaction, I implemented a secure login system.
-          </p>
-        </div>
-
-        <br />
-
-        <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Key Features</h3>
-        <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
-          <h4 className='text-lg text-deg1'>User Authentication</h4>
-          <ul className='text-sm'>
-              Users can explore the website without authentication, but to add items to the shopping cart, a secure login is required.
-              <br /><br />
-              Two user roles: <br />
-              Client: Can browse and purchase books, manage their shopping cart, and view order history.
               <br />
-              Admin: Has access to a control management page for adding new products and creating product categories
-          </ul>
-        </div>
 
-        <br />
+              <h3 className='mb-1  w-fit text-deg1 font-semibold text-xl'>Demo</h3>
+            <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
+                <div className='text-sm mb-5'>
+                  The documentation of project is accessible online at:   
+                  <a href='https://electronixapi.somee.com/swagger/' className='text-blue underline'>https://electronixapi.somee.com/swagger/</a>
+                  <br />
+                  Feel free to explore the features and functionalities implemented in the application.
+                  <br />
+                  <br />
+                  E-Commerce Store demo:<a href=' https://electronics-rust.vercel.app/' className='text-blue underline'> https://electronics-rust.vercel.app/</a>
+                  <br />
+                  Dashboard store demo: <a href=' https://dashboard-electronics.netlify.app/login' className='text-blue underline'> https://dashboard-electronics.netlify.app/login</a>
+                  <br />
+                  <br />
 
-        <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Admin Control Panel</h3>
-        <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
-        <p className='text-sm'>
-          Exclusive access for admin users to manage the bookstore efficiently.
-          <br />
-          Admins can add new products to the catalog and create categories to organize the inventory.
-        </p>
-        </div>
+                  Demo Account For Dashboard
+                  <ul>
+                      <li>Email: owner@example.com</li>
+                      <li>Password: Pass1234!</li>
+                  </ul>
+                </div>
+                
+            </div>
 
-        <br />
+              <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Key Features</h3>
+              <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
+                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Role-Based Authentication</h4>
+                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                    Implemented role-based authentication allowing users to explore the website without login for general browsing.
+                    <br />
+                    Secure areas, such as the shopping cart and checkout process, require user authentication via JSON Web Tokens (JWT).
+                    <br />
+                    Three user roles:
+                    <br />
+                    Client: Access to browse and purchase products.
+                    <br />
+                    Admin: Control over the dashboard and product management.
+                    <br />
+                    Owner: Has authority to add and remove admin accounts.
+                </p>
 
-        <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Repository Pattern with Unit of Work</h3>
-        <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
-          <p className='text-sm'>
-          Implemented a robust data management system using the repository pattern and a unit of work to ensure maintainability and scalability.
-          </p>
-        </div>
+                <br />
 
-        <br />
+                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>API Development</h4>
+                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                Constructed a robust API using the .NET framework, providing seamless communication between the front-end and database.
+                <br />
+                Implemented endpoints for public access, user authentication, product interactions, and admin functionalities.
+                </p>
 
-        <h3 className='mb-1  w-fit dark:text-deg1 text-deg3-dark font-semibold text-xl'>Demo</h3>
-        <div className='border-s-[1px] border-s-gray border-opacity-[0.5] ps-5'>
-          <div className='text-sm mb-5'>
-            The project is accessible online at http://mohamad.somee.com
-            <br />
-            Feel free to explore the features and functionalities implemented in the application.
-            <br />
-            <br />
-            Demo Client Account:
-            <ul>
-              <li>Email: demo</li>
-              <li>Password: demo</li>
-            </ul>
-            <br />
+                <br />
 
-            Demo Admin Account:
-            <ul>
-                <li>Email: demo</li>
-                <li>Password: demo</li>
-            </ul>
+                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Secure Authentication and Forgot Password</h4>
+                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                Utilized JSON Web Tokens for secure user authentication, ensuring data integrity and confidentiality.
+                <br />
+                Implemented a password recovery system through a dedicated API endpoint.
+                </p>
+
+                <br />
+
+                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Payment Integration</h4>
+                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                Integrated the Stripe API for a secure and streamlined checkout process.
+                <br />
+                Implemented payment functionalities, allowing users to seamlessly complete purchases.
+                </p>
+
+                <br />
+
+                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Product Variation and Real-World Relations</h4>
+                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                Modeled product relationships based on real-world scenarios, incorporating variations, quantities, and prices for each product
+                <br />
+                Considered the availability of each product variation, providing a dynamic shopping experience
+                </p>
+
+                <br />
+
+                <h4 className='text-lg dark:text-deg1 text-deg3-dark'>Rating System</h4>
+                <p className='text-sm ps-5 border-s-[1px] border-s-gray border-opacity-[0.5]'>
+                Incorporated a user-friendly rating system, enabling customers to express their opinions and provide feedback on products
+                </p>
+
+              </div>
           </div>
-
-          <a href="http://mohamad.somee.com" className='general-btn'>Demo</a>
-          
       </div>
-
-
-      </div>
-</div>
-</div>
+    </div>
   )
 }
 
-export default Project2
+export default Project3

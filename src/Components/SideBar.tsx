@@ -93,8 +93,8 @@ function SideBar({state}:SideBarProps) {
               setSelected={setSelected} addLi={addLi} icon={<img className="w-[16px] inline mr-2 " src={Python} alt="Python" />}/>
             <Item title={'Project2.cs'} to={'/Project2.cs'}selected={selected} collabsed={state.collapsed} 
               setSelected={setSelected} addLi={addLi} icon={<img className="w-[16px] inline mr-2 " src={CSharp} alt="Python" />}/>
-            <Item title={'Project3.cs'} to={'/Project3.cs'}selected={selected} collabsed={state.collapsed} 
-              setSelected={setSelected} addLi={addLi} icon={<img className="w-[16px] inline mr-2 " src={CSharp} alt="Python" />}/>
+            {/* <Item title={'Project3.cs'} to={'/Project3.cs'}selected={selected} collabsed={state.collapsed} 
+              setSelected={setSelected} addLi={addLi} icon={<img className="w-[16px] inline mr-2 " src={CSharp} alt="Python" />}/> */}
           {/* </SubMenu> */}
       </Menu>
     </Sidebar>
